@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 
 # ANT Permission
 PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+    $(COMMON_PATH)/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # AuthSecret
 PRODUCT_PACKAGES += \
@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libldacBT_dec \
+    libbtconfigstore \
     libsndmonitor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
