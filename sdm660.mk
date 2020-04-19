@@ -21,19 +21,21 @@
 # definition file).
 #
 
+# Inherit proprietary files
+$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
+
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -206,10 +208,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     vendor.display.config@1.1 \
     vendor.display.config@1.1_vendor
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -465,6 +463,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
