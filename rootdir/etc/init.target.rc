@@ -106,6 +106,7 @@ on boot
 
     # Touchpanel
     chown system system /sys/touchpanel/capacitive_keys
+    chmod 0660 /sys/touchpanel/double_tap
     chown system system /sys/touchpanel/double_tap
     chown system system /sys/touchpanel/reversed_keys
 
