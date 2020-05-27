@@ -96,13 +96,13 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7
 # Audio FX modules - from LA.UM.8.2.r1-06200-sdm660.0
 vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
 vendor/lib/soundfx/libasphere.so|eaa35262337a8401aaecf02997e98e24083f064c
-vendor/lib/soundfx/libqcbassboost.so|a98106da1036a37816a48ad35d3db2bfd51a9077
-vendor/lib/soundfx/libqcreverb.so|7a41c7c056838ad4236427d1963b38fe4fbe0b5c
-vendor/lib/soundfx/libqcvirt.so|fa2e82a1f5944a653856ce2f41c43df2416679f7
+vendor/lib/soundfx/libqcbassboost.so|e99a5187d056318a29ee2eb31f1069a51b19a176
+vendor/lib/soundfx/libqcreverb.so|5d53d6d23a33ec42e9ad3fe3771cf695d415c7cb
+vendor/lib/soundfx/libqcvirt.so|7735eb4b8a72b1dbaa9cf550613876ecdc090619
 vendor/lib64/soundfx/libasphere.so|27154ce2eed6902f36ed8c85324cf61c96c8af02
-vendor/lib64/soundfx/libqcbassboost.so|b1d0197cd7f59e2d5e679efa2f85ee76558f6e5a
-vendor/lib64/soundfx/libqcreverb.so|63424b348f7b246d3316c864b9dd8145875e8778
-vendor/lib64/soundfx/libqcvirt.so|eb23489165f6930a87e0be4a4df6321cd8c892f0
+vendor/lib64/soundfx/libqcbassboost.so|6db0c8fcc549d8536c338389eba6344a057f590d
+vendor/lib64/soundfx/libqcreverb.so|ad41f054dfa0aaf39baabe48c6aeae03dafb5b8c
+vendor/lib64/soundfx/libqcvirt.so|3513f5ff84f46bbe6f2278d7977206783205fcb6
 
 # Bluetooth (aptX) - from jasmine-user-10-QKQ1.190910.002-V11.0.4.0.QDIMIXM
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -456,7 +456,7 @@ vendor/lib64/libOmxG711Dec.so|0a94e28f0b70e2bd8924f5aecc926ccb4a8a49e9
 vendor/lib64/libOmxQcelp13Dec.so|d8bb8a5c999a2f2e3a7e717d422ab43c90ab9028
 vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
 
-# Mlipay
+# Mlipay - from wayne V9.7.4
 vendor/bin/mlipayd@1.1|13e9167024fd2dc49a56ed27e583057408dcc1eb
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
 vendor/lib64/libmlipay.so|6cacf75f4a7eb50cbb7de384a3cfc1702a3a5f4a
@@ -492,7 +492,7 @@ vendor/bin/pm-service|835238076f47bf46cee01b27a76a96282eadb309
 vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
 vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
 
-# Power-off charging daemon
+# Power-off charging daemon - from wayne V9.7.4
 -sbin/charger:sbin/chargeonlymode;rootfs|664dfa548b81cac348f1699222160f8d2b4d247c
 
 # Postprocessing - from LA.UM.8.2.r1-06200-sdm660.0
@@ -812,7 +812,7 @@ vendor/lib64/libmiracast.so|1bc1d57aefd8cc429dcb07980d8015b45b0fdce5
 vendor/lib64/libmmosal_proprietary.so|b8dbc765c15f30dec9f1c0907a25810df1bc9731
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so|bf72e5a9a9305ac1c0c5d9a5b5d401b694055dbf
 
-# Common Camera
+# Common Camera - from Pie
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libmmcamera_chromaflash_lib.so|2ac15c08e7916b039b9d053a2d5c6846ed28ae41
