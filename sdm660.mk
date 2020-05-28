@@ -435,6 +435,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    perf \
     bt
 
 # RCS
